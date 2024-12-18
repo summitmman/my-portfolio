@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Parkinsans, JetBrains_Mono } from "next/font/google";
+import Header from "@/components/Header";
+import ThemeSelector from '@/components/ThemeSelector';
 import "./globals.css";
 
 const headerFont = Parkinsans({
@@ -27,7 +29,12 @@ export default function RootLayout({
       <body
         className={`${headerFont.variable} ${defaultFont.variable} antialiased`}
       >
-        {children}
+        <Header />
+        <ThemeSelector />
+        {children}  
+        <footer className="my-container text-center text-sm p-10 default-color">
+          Built with Next.js and TailwindCSS
+        </footer>
       </body>
     </html>
   );

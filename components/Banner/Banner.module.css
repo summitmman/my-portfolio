@@ -2,9 +2,11 @@
     font-size: 3.5rem;
     line-height: 3rem;
     @apply font-bold;
+    color: var(--header-text-color);
 }
 .subTitle {
     font-size: 1.7rem;
+    color: var(--sub-header-text-color);
 }
 .social {
     @apply flex gap-3 list-none text-xl mt-2;

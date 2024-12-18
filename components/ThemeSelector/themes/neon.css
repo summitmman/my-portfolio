@@ -1,0 +1,16 @@
+:root {
+    --border-color: rgba(0,0,0,0.6);
+    --background-color: #140D0D;
+    --foreground-color: #D6D6D6;
+    --header-text-color: #31E1F7;
+    --sub-header-text-color: #8F43EE;
+    --primary-color: #FF7777;
+    --default-color: #400D51;
+    --link-color: #A64D79;
+    --selection-color: #D6D6D6;
+
+    --neon-color-1: #31E1F7;
+    --neon-color-2: #FF7777;
+    --neon-color-3: #D800A6;
+    --neon-color-4: #400D51;
+}
