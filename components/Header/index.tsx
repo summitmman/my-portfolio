@@ -14,7 +14,15 @@ const Header = () => {
                     <li><Link href="#">Profile</Link></li>
                     <li><Link href="#">Blog</Link></li>
                 </ul>
-                <span className="flex sm:hidden justify-end"><FaBars /></span>
+                <span className="flex sm:hidden justify-end text-lg"><FaBars /></span>
+                {/* <span className="flex sm:hidden justify-end">
+                    <label className={`flex ${style.menu}`} htmlFor="check">
+                        <input type="checkbox" id="check"/> 
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </span> */}
             </nav>
         </header>
     );
