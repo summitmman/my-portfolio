@@ -1,0 +1,22 @@
+.timelineContainer {
+    padding-left: 1rem;
+    border-left: 1px solid var(--default-color);
+    margin-left: 5px;
+}
+
+.timelineItem {
+    position: relative;
+    margin-top: 1rem;
+}
+.timelineItem:first-child {
+    margin-top: 0;
+}
+.timelineItem::before {
+    content: "";
+    border: 5px solid var(--primary-color);
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    left: -1.3rem;
+    top: 0.43rem;
+}

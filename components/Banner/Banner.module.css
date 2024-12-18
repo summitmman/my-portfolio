@@ -1,0 +1,11 @@
+.title {
+    font-size: 3.5rem;
+    line-height: 3rem;
+    @apply font-bold;
+}
+.subTitle {
+    font-size: 1.7rem;
+}
+.social {
+    @apply flex gap-3 list-none text-xl mt-2;
+}
