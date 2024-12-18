@@ -1,0 +1,16 @@
+:root {
+    --border-color: rgba(0,0,0,0.6);
+    --background-color: #FFF6E9;
+    --foreground-color:  #171717;
+    --header-text-color: #4335A7;
+    --sub-header-text-color: #8A89D3;
+    --primary-color: #FF7F3E;
+    --default-color: #80C4E9;
+    --link-color: #219B9D;
+    --selection-color:  #171717;
+    
+    --retro-color-1: #FFF6E9;
+    --retro-color-2: #80C4E9;
+    --retro-color-3: #FF7F3E;
+    --retro-color-4: #4335A7;
+}

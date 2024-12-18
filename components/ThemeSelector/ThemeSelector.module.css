@@ -1,0 +1,31 @@
+.themeList {
+    transform: rotate(-90deg);
+    position: fixed;
+    left: 0.3rem;
+    font-size: 0.8rem;
+    bottom: 0.3rem;
+    transform-origin: 0% 0%;
+    color: var(--sub-header-text-color);
+}
+.themeList, .themeList > ul {
+    display: flex;
+}
+.themeList > ul > li {
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+.themeList > ul > li::before {
+    content: '';
+    border: 1px solid var(--primary-color);
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    margin-right: 0.2em;
+    vertical-align: middle;
+}
+.active::before {
+    background-color: var(--primary-color);
+}
+.title {
+    color: var(--header-text-color);
+}

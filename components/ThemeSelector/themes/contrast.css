@@ -1,0 +1,11 @@
+:root {
+    --border-color: rgba(0,0,0,0.6);
+    --background-color: #FFF;
+    --foreground-color: #171717;
+    --header-text-color: #171717;
+    --sub-header-text-color: #444;
+    --primary-color: #171717;
+    --default-color: #444;
+    --link-color: #0000EE;
+    --selection-color: #FFF;
+}

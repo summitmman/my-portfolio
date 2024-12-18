@@ -6,4 +6,5 @@
     padding-bottom: 0.83em;
     background-color: var(--background-color);
     z-index: 2;
+    color: var(--header-text-color);
 }
