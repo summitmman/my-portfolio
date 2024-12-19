@@ -43,7 +43,7 @@
     @apply list-disc ml-4;
 }
 .workDetails > li {
-    @apply mb-4;
+    @apply mb-6;
 }
 .workDetails > li:last-child {
     @apply mb-0;

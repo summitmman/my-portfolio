@@ -41,6 +41,11 @@ a:hover {
   opacity: 0.8;
 }
 
+li::marker {
+  /* content: '=>'; */
+  color: var(--sub-header-text-color);
+}
+
 
 .my-container {
   @apply container mx-auto px-8 sm:px-28;
