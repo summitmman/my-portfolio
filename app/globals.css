@@ -43,7 +43,7 @@ a:hover {
 
 
 .my-container {
-  @apply container mx-auto px-8 sm:px-16;
+  @apply container mx-auto px-8 sm:px-28;
 }
 
 .pill-container > * {
