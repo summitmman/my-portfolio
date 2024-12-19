@@ -109,6 +109,56 @@ a:hover {
 .default-color {
   color: var(--default-color);
 }
+.default-background {
+  background-color: var(--default-color);
+}
+.primary-background {
+  background-color: var(--primary-color);
+}
+.background-color {
+  color: var(--background-color);
+}
 .header-text-color {
   color: var(--header-text-color);
+}
+
+.expand {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0s ease-in;
+  height: 0;
+}
+.expand * {
+  height: 0;
+}
+.contract {
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+  transition: opacity 400ms ease-in;
+  height: auto;
+}
+.contract * {
+  height: auto;
+}
+.expanded.expand {
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+  transition-duration: 400ms;
+  height: auto;
+}
+.expanded.expand * {
+  height: auto;
+}
+.expanded.contract {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition-duration: 0s;
+  height: 0;
+}
+.expanded.contract * {
+  height: 0;
 }

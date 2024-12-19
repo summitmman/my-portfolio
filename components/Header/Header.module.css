@@ -60,3 +60,7 @@
     right: 0;
     @apply gap-8;
 }
+
+.active {
+    filter: brightness(50%);
+}
