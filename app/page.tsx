@@ -1,4 +1,5 @@
 import Banner from "@/components/Banner";
+import Profile from "@/components/Profile";
 import { Education, Introduction, Language, Skills, WorkExperience, Interests, VolunteerExperience, IceBreaker } from "@/components/Sections";
 
 export default function Home() {
@@ -9,11 +10,11 @@ export default function Home() {
         <Introduction />
         <Skills />
         <WorkExperience />
-        <Education />
+        {/* <Education />
         <Language />
         <Interests />
         <VolunteerExperience />
-        <IceBreaker />
+        <IceBreaker /> */}
       </main>
     </>
   );

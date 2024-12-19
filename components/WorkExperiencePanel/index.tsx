@@ -25,9 +25,9 @@ interface WorkExperiencePanelProps {
 
 const WorkExperiencePanel = ({ data }: WorkExperiencePanelProps) => {
     const [isExpanded, setExpanded] = useState(false);
-    const expand = data.showKnowMore ? styles.expand : '';
-    const contract = data.showKnowMore ? styles.contract : '';
-    const expanded = isExpanded ? styles.expanded : '';
+    const expand = data.showKnowMore ? 'expand' : '';
+    const contract = data.showKnowMore ? 'contract' : '';
+    const expanded = isExpanded ? 'expanded' : '';
     return (
         <div className={styles.workExperience}>
             <div className={styles.header}>
@@ -56,7 +56,7 @@ const WorkExperiencePanel = ({ data }: WorkExperiencePanelProps) => {
                         <Pill
                             key={index}
                             variant={(t as any).variant}
-                            className={`${(t as any).variant === PillVariant.Secondary ? styles.expand : ''} ${expanded}`}
+                            className={`${(t as any).variant === PillVariant.Secondary ? 'expand' : ''} ${expanded}`}
                         >
                             {typeof t === 'string' ? t : t.label}
                         </Pill>
