@@ -5,6 +5,7 @@ import { FaReact, FaVuejs, FaAngular, FaT, FaNodeJs, FaDatabase, FaC } from 'rea
 const Skills = () => {
     return (
         <Section title="Skills">
+            <p>Tools and technologies I have experience with</p>
             <p className="pill-container mt-1">
                 <Pill icon={<FaReact />}>React</Pill>
                 <Pill icon={<FaVuejs />}>Vue</Pill>

@@ -16,6 +16,7 @@ const WorkExperience = () => {
             startDate: 'Jun 2020',
             endDate: 'Present',
             location: 'Bengaluru, India',
+            shortDescription: 'Owned frontend for entire paytm insurance. Architected a microfrontend and created a no-code framework and component and utility library.',
             description: 'Paytm is a consumer facing payments application in India. It also acts like an aggregator for products such as insurance, ticketing, e-commerce, etc.',
             details: [
                 'Joined as a Senior Software Engineer and promoted to Technical Lead and then Senior Technical Lead in 3 years',
@@ -50,6 +51,7 @@ const WorkExperience = () => {
             startDate: 'Dec 2018',
             endDate: 'Jun 2020',
             location: 'Mumbai, India',
+            shortDescription: 'Created ULIP insurance product from scratch along with an inhouse custom component and utility library',
             description: 'Coverfox is an insurance broker which guides consumers and provides a DIY portal to buy and renew insurance',
             details: [
                 'Shared ownership of ULIP insurance product frontend along with another lead on desktop and mobile web',
@@ -76,6 +78,7 @@ const WorkExperience = () => {
             startDate: 'Jan 2015',
             endDate: 'Dec 2018',
             location: 'Mumbai, India',
+            shortDescription: 'Product and service company which caters to the automation of processes and reporting for Hedge Funds majorly in the US.',
             description: 'Product and service company which caters to the automation of processes and reporting for Hedge Funds majorly in the US.',
             details: [
                 'Created be-spoke projects for multiple US based Hedge fund firms, including a real-time PnL monitor using websockets',

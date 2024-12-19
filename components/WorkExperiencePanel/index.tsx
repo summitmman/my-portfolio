@@ -1,3 +1,5 @@
+'use client';
+import { useState } from 'react';
 import Pill, { PillVariant } from '../Pill';
 import styles from './WorkExperiencePanel.module.css';
 
@@ -12,6 +14,7 @@ export interface IWorkExperience {
     endDate?: string;
     location: string;
     description: string;
+    shortDescription?: string;
     details?: string[];
     tech?: (string|{label: string; variant: PillVariant})[];
     showKnowMore?: boolean;
@@ -21,6 +24,10 @@ interface WorkExperiencePanelProps {
 }
 
 const WorkExperiencePanel = ({ data }: WorkExperiencePanelProps) => {
+    const [isExpanded, setExpanded] = useState(false);
+    const expand = data.showKnowMore ? styles.expand : '';
+    const contract = data.showKnowMore ? styles.contract : '';
+    const expanded = isExpanded ? styles.expanded : '';
     return (
         <div className={styles.workExperience}>
             <div className={styles.header}>
@@ -34,17 +41,32 @@ const WorkExperiencePanel = ({ data }: WorkExperiencePanelProps) => {
                     <span>{data.location}</span>
                 </div>
             </div>
-            <p className={styles.description}>
+            {data.shortDescription && <p className={`pt-4 ${contract} ${expanded}`}>
+                { data.shortDescription }
+            </p>}
+            <p className={`${styles.description} ${expand} ${expanded}`}>
                 {data.description}
             </p>
-            {data.details?.length && <ul className={styles.workDetails}>
+            {data.details?.length && <ul className={`${styles.workDetails} ${expand} ${expanded}`}>
                 {data.details.map((detail, index) => <li key={index}>{detail}</li>)}
             </ul>}
             {data.tech?.length && <div className="pill-container text-sm py-4">
-                {data.tech.map((t, index) => <Pill key={index} variant={(t as any).variant}>{typeof t === 'string' ? t : t.label}</Pill>)}
+                {data.tech.map(
+                    (t, index) => (
+                        <Pill
+                            key={index}
+                            variant={(t as any).variant}
+                            className={`${(t as any).variant === PillVariant.Secondary ? styles.expand : ''} ${expanded}`}
+                        >
+                            {typeof t === 'string' ? t : t.label}
+                        </Pill>
+                    )
+                )}
             </div>}
             {data.showKnowMore && <div>
-                <span className={`underline-link text-xs ${styles.knowMore}`}>Know More</span>
+                <span className={`underline-link text-xs ${styles.knowMore}`} onClick={() => setExpanded(!isExpanded)}>
+                    {isExpanded ? 'Keep it brief' : 'Know More' }
+                </span>
             </div>}
         </div>
     );
