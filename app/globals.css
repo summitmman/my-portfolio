@@ -20,6 +20,7 @@ body {
   color: var(--foreground-color);
   background: var(--background-color);
   font-family: var(--font-default), Arial, Helvetica, sans-serif;
+  transition: color 200ms ease;
 }
 ::selection {
   background-color: var(--default-color);
@@ -107,4 +108,7 @@ a:hover {
 }
 .default-color {
   color: var(--default-color);
+}
+.header-text-color {
+  color: var(--header-text-color);
 }
