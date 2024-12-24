@@ -28,8 +28,8 @@ const Header = () => {
                 <ul className={`${style.menu} ${showMenu ? style.mobileMenu : ''}`}>
                     <li><Link href="/" className={path === '/' ? style.active : ''}>Home</Link></li>
                     <li><Link href="/about" className={path === '/about' ? style.active : ''}>About</Link></li>
-                    <li><Link href="#" className={path === '#' ? style.active : ''}>Projects</Link></li>
-                    <li><Link href="#" className={path === '#' ? style.active : ''}>Blog</Link></li>
+                    <li><Link href="/projects" className={path === '/projects' ? style.active : ''}>Projects</Link></li>
+                    <li><Link href="/blog" className={path === '/blog' ? style.active : ''}>Blog</Link></li>
                 </ul>
                 {/* <span className="flex sm:hidden justify-end text-lg header-text-color"><FaBars /></span> */}
                 <span className="flex sm:hidden justify-end header-text-color">

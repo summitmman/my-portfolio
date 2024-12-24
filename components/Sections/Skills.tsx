@@ -7,14 +7,14 @@ const Skills = () => {
         <Section title="Skills">
             <p>Tools and technologies I have experience with</p>
             <p className="pill-container mt-1">
-                <Pill icon={<FaReact />}>React</Pill>
-                <Pill icon={<FaVuejs />}>Vue</Pill>
-                <Pill icon={<FaT />}>Typescript</Pill>
-                <Pill icon={<FaNodeJs />}>Node</Pill>
-                <Pill icon={<FaDatabase />}>MySQL</Pill>
-                <Pill icon={<FaAngular />} variant={PillVariant.Secondary}>Angular</Pill>
-                <Pill icon={<FaC />} variant={PillVariant.Secondary}>C#</Pill>
-                <Pill icon={<FaDatabase />} variant={PillVariant.Secondary}>MSSQL</Pill>
+                <Pill icon={<FaReact />} variant={PillVariant.Outline}>React</Pill>
+                <Pill icon={<FaVuejs />} variant={PillVariant.Outline}>Vue</Pill>
+                <Pill icon={<FaT />} variant={PillVariant.Outline}>Typescript</Pill>
+                <Pill icon={<FaNodeJs />} variant={PillVariant.Outline}>Node</Pill>
+                <Pill icon={<FaDatabase />} variant={PillVariant.Outline}>MySQL</Pill>
+                <Pill icon={<FaAngular />} variant={PillVariant.Dashed}>Angular</Pill>
+                <Pill icon={<FaC />} variant={PillVariant.Dashed}>C#</Pill>
+                <Pill icon={<FaDatabase />} variant={PillVariant.Dashed}>MSSQL</Pill>
             </p>
         </Section>
     );

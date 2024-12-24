@@ -5,11 +5,11 @@ const Language = () => {
     return (
         <Section title="Language">
             <p className="pill-container">
-                <Pill>English</Pill>
-                <Pill>Hindi</Pill>
-                <Pill>Bengali</Pill>
-                <Pill>Marathi</Pill>
-                <Pill variant={PillVariant.Secondary}>Jag lär mig svenska</Pill>
+                <Pill variant={PillVariant.Outline}>English</Pill>
+                <Pill variant={PillVariant.Outline}>Hindi</Pill>
+                <Pill variant={PillVariant.Outline}>Bengali</Pill>
+                <Pill variant={PillVariant.Outline}>Marathi</Pill>
+                <Pill variant={PillVariant.Dashed}>Jag lär mig svenska</Pill>
             </p>
         </Section>
     );

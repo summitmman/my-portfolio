@@ -50,13 +50,13 @@ const WorkExperiencePanel = ({ data }: WorkExperiencePanelProps) => {
             {data.details?.length && <ul className={`${styles.workDetails} ${expand} ${expanded}`}>
                 {data.details.map((detail, index) => <li key={index}>{detail}</li>)}
             </ul>}
-            {data.tech?.length && <div className="pill-container text-sm py-4">
+            {data.tech?.length && <div className="pill-container text-xs py-4">
                 {data.tech.map(
                     (t, index) => (
                         <Pill
                             key={index}
                             variant={(t as any).variant}
-                            className={`${(t as any).variant === PillVariant.Secondary ? 'expand' : ''} ${expanded}`}
+                            className={`${(t as any).variant === PillVariant.Dashed ? 'expand' : ''} ${expanded}`}
                         >
                             {typeof t === 'string' ? t : t.label}
                         </Pill>

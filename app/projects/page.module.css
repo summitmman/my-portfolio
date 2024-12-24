@@ -1,0 +1,9 @@
+.projectIcon {
+    font-size: 3rem;
+    display: inline-block;
+    padding: 0.5rem;
+    border: 1px solid var(--default-color);
+    border-radius: 8px;
+    background-color: var(--default-color);
+    color: var(--background-color);
+}

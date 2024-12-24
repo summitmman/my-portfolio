@@ -65,6 +65,7 @@ li::marker {
   display: inline-block;
   cursor: pointer;
   margin-top: 2px;
+  font-family: var(--font-header), Arial, Helvetica, sans-serif;
 }
 .arrow-link::after {
   content: '>';
@@ -77,6 +78,7 @@ li::marker {
   font-weight: bold;
   transition: transform 0.2s cubic-bezier(.47,1.64,.41,.8);
   transform: translateX(10px) rotate(-45deg);
+  font-family: var(--font-header), Arial, Helvetica, sans-serif;
 }
 .arrow-link:hover::after {
   transform: translateX(12px) translateY(-2px) rotate(-45deg);
@@ -105,7 +107,7 @@ li::marker {
   font-weight: bold;
   color: var(--header-text-color);
   font-size: 1.1rem;
-  font-family: var(--font-header);
+  font-family: var(--font-header), Arial, Helvetica, sans-serif;
 }
 
 .sub-header-text-color {
@@ -171,4 +173,7 @@ li::marker {
   font-size: 3.5rem;
   line-height: 4rem;
   @apply py-4 font-bold;
+}
+.header-font {
+  font-family: var(--font-header), Arial, Helvetica, sans-serif;
 }

@@ -6,12 +6,12 @@ const Interests = () => {
     return (
         <Section title="Interests">
             <p className="pill-container">
-                <Pill icon={<FaPersonSwimming />}>Swimming</Pill>
-                <Pill icon={<FaPersonWalking />}>Trekking</Pill>
-                <Pill icon={<FaPencil />}>Sketching</Pill>
-                <Pill icon={<FaBezierCurve />}>Digital Art</Pill>
-                <Pill icon={<FaFilm />} variant={PillVariant.Secondary}>Animation</Pill>
-                <Pill icon={<FaFaceSmile />} variant={PillVariant.Secondary}>Sculpting</Pill>
+                <Pill variant={PillVariant.Outline} icon={<FaPersonSwimming />}>Swimming</Pill>
+                <Pill variant={PillVariant.Outline} icon={<FaPersonWalking />}>Trekking</Pill>
+                <Pill variant={PillVariant.Outline} icon={<FaPencil />}>Sketching</Pill>
+                <Pill variant={PillVariant.Outline} icon={<FaBezierCurve />}>Digital Art</Pill>
+                <Pill icon={<FaFilm />} variant={PillVariant.Dashed}>Animation</Pill>
+                <Pill icon={<FaFaceSmile />} variant={PillVariant.Dashed}>Sculpting</Pill>
             </p>
         </Section>
     );

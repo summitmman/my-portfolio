@@ -3,7 +3,9 @@ import styles from './Pill.module.css';
 
 export enum PillVariant {
     Primary = 'primary',
-    Secondary = 'secondary'
+    Secondary = 'secondary',
+    Outline = 'outline',
+    Dashed = 'dashed'
 }
 
 interface PillProps extends PropsWithChildren {
