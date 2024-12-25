@@ -1,4 +1,4 @@
-import Pill from "@/components/Pill";
+import Pill, { PillType } from "@/components/Pill";
 import styles from './page.module.css';
 import { FaCalendar, FaBookOpenReader, FaTags } from 'react-icons/fa6';
 import Image from 'next/image';
@@ -88,7 +88,7 @@ const Blog = () => {
                                 {project.tags?.length && <div className="text-xs sm:flex sm:gap-4 mt-1">
                                     <div className="pill-container">
                                         <FaTags className="inline-block text-sm" />
-                                        {project.tags.map(tag => <Pill key={tag}>{tag}</Pill>)}
+                                        {project.tags.map(tag => <Pill type={PillType.Primary} key={tag}>{tag}</Pill>)}
                                     </div>
                                 </div>}
                                 <div className="text-sm sm:flex sm:gap-4 mt-1 sm:absolute sm:bottom-0 opacity-60">

@@ -129,6 +129,9 @@ li::marker {
 .header-text-color {
   color: var(--header-text-color);
 }
+.primary-text-color {
+  color: var(--primary-color);
+}
 
 .expand {
   visibility: hidden;

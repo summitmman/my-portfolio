@@ -3,4 +3,8 @@
     border-radius: 8px;
     height: 230px;
     object-fit: cover;
+    filter: grayscale(1);
+}
+.projectIcon:hover {
+    filter: grayscale(0);
 }
