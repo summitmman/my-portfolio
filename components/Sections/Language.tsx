@@ -1,15 +1,15 @@
-import Pill, { PillVariant } from '../Pill';
+import Pill, { PillType, PillVariant } from '../Pill';
 import Section from './Section';
 
 const Language = () => {
     return (
         <Section title="Language">
             <p className="pill-container">
-                <Pill>English</Pill>
-                <Pill>Hindi</Pill>
-                <Pill>Bengali</Pill>
-                <Pill>Marathi</Pill>
-                <Pill variant={PillVariant.Secondary}>Jag lär mig svenska</Pill>
+                <Pill variant={PillVariant.Outline} type={PillType.Primary}>English</Pill>
+                <Pill variant={PillVariant.Outline} type={PillType.Primary}>Hindi</Pill>
+                <Pill variant={PillVariant.Outline} type={PillType.Primary}>Bengali</Pill>
+                <Pill variant={PillVariant.Outline} type={PillType.Primary}>Marathi</Pill>
+                <Pill variant={PillVariant.Dashed} type={PillType.Primary}>Jag lär mig svenska</Pill>
             </p>
         </Section>
     );

@@ -1,0 +1,6 @@
+.projectIcon {
+    display: inline-block;
+    border-radius: 8px;
+    height: 230px;
+    object-fit: cover;
+}
