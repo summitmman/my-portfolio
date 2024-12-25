@@ -24,7 +24,7 @@ const Header = () => {
     return (
         <header className={style.header}>
             <nav className="my-container grid sm:grid-cols-3 grid-cols-2">
-                <Image src="/keyboard.png" alt='logo' width={30} height={30} />
+                <Link href="/"><Image src="/keyboard.png" alt='logo' width={30} height={30} /></Link>
                 <ul className={`${style.menu} ${showMenu ? style.mobileMenu : ''}`}>
                     <li><Link href="/" className={path === '/' ? style.active : ''}>Home</Link></li>
                     <li><Link href="/about" className={path === '/about' ? style.active : ''}>About</Link></li>

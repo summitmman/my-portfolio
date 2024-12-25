@@ -9,8 +9,8 @@
   --header-text-color: #3C3D37;
   --sub-header-text-color: #697565;
   --primary-color: #E07B39;
-  /* --default-color: rgba(0,0,0,0.6); */
-  --default-color: #B6A28E;
+  --default-color: rgba(0,0,0,0.4);
+  --secondary-color: #B6A28E;
   /* --link-color: #459D8B; */
   --link-color: #328675;
   --selection-color: #171717;
@@ -23,7 +23,7 @@ body {
   transition: color 200ms ease;
 }
 ::selection {
-  background-color: var(--default-color);
+  background-color: var(--secondary-color);
   color: var(--selection-color);
 }
 h1, h2, h3, h4, h5, h6 {
@@ -43,17 +43,18 @@ a:hover {
 
 li::marker {
   /* content: '=>'; */
-  color: var(--sub-header-text-color);
+  color: var(--primary-color);
 }
 
 
 .my-container {
-  @apply container mx-auto px-8 sm:px-28;
+  @apply container mx-auto px-8 md:px-16 lg:px-28;
 }
 
 .pill-container > * {
   margin-right: 0.4em;
   margin-top: 0.5em !important;
+  vertical-align: middle;
 }
 .pill-container > *:last-child {
   margin-right: 0;
@@ -114,10 +115,10 @@ li::marker {
   color: var(--sub-header-text-color);
 }
 .default-color {
-  color: var(--default-color);
+  color: var(--secondary-color);
 }
 .default-background {
-  background-color: var(--default-color);
+  background-color: var(--secondary-color);
 }
 .primary-background {
   background-color: var(--primary-color);

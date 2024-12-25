@@ -12,10 +12,10 @@ const Profile = () => {
                 className="rounded-md grayscale hover:grayscale-0 w-full transition-all max-w-sm mx-auto"
             />
             <div className="w-full max-w-sm mt-4 mx-auto flex gap-2">
-                <a href="/Sumit - Resume.pdf" target="_blank" className="py-2 px-4 rounded-md primary-background opacity-80 hover:opacity-100 background-color inline-block w-full text-center">
+                <a href="/Sumit - Resume.pdf" target="_blank" className="py-2 px-4 rounded-md primary-background opacity-80 hover:opacity-100 background-color inline-block w-full text-center content-center">
                     Resume <FaArrowUpRightFromSquare className="inline-block" />
                 </a>
-                <a href="/Sumit - Resume.pdf" download={true} className="py-2 px-4 rounded-md primary-background opacity-80 hover:opacity-100 background-color inline-block">
+                <a href="/Sumit - Resume.pdf" download={true} className="py-2 px-4 rounded-md primary-background opacity-80 hover:opacity-100 background-color inline-block content-center">
                     <FaDownload className="inline-block" />
                 </a>
             </div>

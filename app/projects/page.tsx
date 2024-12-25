@@ -43,11 +43,11 @@ const Projects = () => {
                                     {project.description}
                                 </div>
                                 <div className="pill-container text-xs">
-                                    {project.technologies.map(tech => <Pill>{tech}</Pill>)}
+                                    {project.technologies.map(tech => <Pill key={tech}>{tech}</Pill>)}
                                 </div>
                                 {project.demoLink && (
                                     <div className="mt-4">
-                                        <iframe className="w-full h-96" src={project.demoLink} frameBorder="0"></iframe>
+                                        <iframe className="w-full h-96 grayscale" src={project.demoLink} frameBorder="0"></iframe>
                                         <a href={project.demoLink} target="_blank" className="arrow-link text-xs mt-4 mb-2">Visit demo site</a>
                                     </div>
                                 )}
