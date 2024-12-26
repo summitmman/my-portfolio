@@ -136,7 +136,7 @@ li::marker {
 .expand {
   visibility: hidden;
   opacity: 0;
-  position: absolute;
+  position: fixed;
   transition: opacity 0s ease-in;
   height: 0;
 }
@@ -166,7 +166,7 @@ li::marker {
 .expanded.contract {
   visibility: hidden;
   opacity: 0;
-  position: absolute;
+  position: fixed;
   transition-duration: 0s;
   height: 0;
 }
