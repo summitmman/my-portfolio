@@ -6,9 +6,19 @@ const About = () => {
         <main className="my-container flex flex-col-reverse sm:grid sm:grid-cols-3 sm:gap-8">
             <div className="col-span-2">
                 <section className="mt-8">
-                    <h2 className={`header-text-size`}>I design and develop scalable solutions</h2>
+                    <h2 className={`header-text-size`}>I design & develop customizable solutions</h2>
                     <p>
-                        I am Sumit Man, a seasoned Full-Stack Developer and Senior Technical Lead. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut porro aliquam in quasi incidunt. Quibusdam officia, magni at dolore qui accusamus voluptate deserunt, repudiandae doloribus quas quod! Sequi, fuga blanditiis praesentium minima eos excepturi possimus nobis laboriosam ratione dicta asperiores vitae ab numquam facere est magni explicabo? Qui minus eum voluptas temporibus alias, ullam sed aliquam voluptate officiis excepturi enim, amet, ipsam iure nulla fugit ipsum officia itaque rerum a accusamus praesentium dignissimos doloribus? Consectetur, cupiditate earum. Hic, natus exercitationem. Eum officiis nobis perspiciatis repellat molestiae perferendis ipsum, commodi et deleniti fugit laborum distinctio iure optio. Maiores eum amet voluptates in fugit tempore quod nulla quia placeat reprehenderit sapiente aspernatur minima doloremque sit, vero voluptate sint exercitationem quae impedit eius itaque autem explicabo deleniti? Perspiciatis, impedit dicta laudantium deleniti molestiae quis obcaecati officia ea dolorum aliquid illo amet corrupti.
+                        I am Sumit Man, a seasoned software developer and a Senior Technical Lead in Paytm (my last organization).
+                        I have been frontend-heavy and have always worked with cutting edge technology. I was fortunate to work with most popular technologies like React, Vue and Angular on a professional level.
+                        That said, I have also worked on the backend, creating apis in rest and graphql, managing database and have solved for the big picture.
+                        I have solved complex requirements, product and operational, with technology. A runtime JSON page builder has been such a solution.
+                    </p>
+                    <p className="mt-4">
+                        I love creating reusable solutions which can be used by other developers. I always had an interest in user experience but now developer experience also intrigues me.
+                        I believe not all problems have the same solution and hence do not force a solution. Through the years of experience I have understood that maintainability comes first. A great solution might not be maintainable and may harm the project in the future.
+                    </p>
+                    <p className="mt-4">
+                        In my spare time, I usually go for walks, swim, sketch and hangout with my wife and two cats having deep conversations (yes, the cats listen in).
                     </p>
                 </section>
                 <IceBreaker />

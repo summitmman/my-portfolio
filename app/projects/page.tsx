@@ -9,7 +9,7 @@ const Projects = () => {
             image: <FaNpm />,
             title: 'Vue Page Craft',
             link: 'https://www.npmjs.com/package/vue-page-craft?activeTab=readme',
-            description: 'Build any page with moderate amount of reactivity on the fly using JSON.',
+            description: 'Build any page with a moderate amount of reactivity, on the fly, using JSON. You can use native html elements, custom components or components from any component library. v-model, v-if and v-for are also supported.',
             technologies: ['Vue 3', 'Typescript', 'Vite'],
             demoLink: 'https://summitmman.github.io/vue-page-craft/'
         },
@@ -17,7 +17,7 @@ const Projects = () => {
             image: <SiStackblitz />,
             title: 'Typescript Rule Engine',
             link: 'https://stackblitz.com/edit/typescript-ifb48m?file=index.ts',
-            description: 'A simple Open-Close typescript rule engine with JSON rules',
+            description: 'A simple Open-Close typescript rule engine with JSON rules. You can add custom conditions and extend the rule engine as needed.',
             technologies: ['Typescript', 'Vite'],
             demoLink: 'https://stackblitz.com/edit/typescript-ifb48m?embed=1&file=index.ts'
         }
@@ -26,7 +26,7 @@ const Projects = () => {
         <main className="my-container">
             <section className="mt-8">
                 <h2 className={`header-text-size`}>Projects</h2>
-                <p>Below are some utilities and libraries I have created on my personal time. They are open source, so feel free to contribute if it seems interesting.</p>
+                <p>Below are some utilities and libraries I have created on my personal time. They are open source, so feel free to contribute if they seem interesting.</p>
                 <div>
                     {projects.map(project => (
                         <div className="sm:flex sm:gap-8 mt-10" key={project.title}>
