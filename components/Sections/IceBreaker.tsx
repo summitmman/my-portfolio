@@ -8,7 +8,7 @@ const IceBreaker = () => {
                 I watch anime and love manga art. I had loved Animax when it first came to India.
                 Started playing games late but got addicted to titles like Diablo 2, Red Faction, Call of Duty, Battlefield, Splinter cell and ofcourse NFS.
                 I like upbeat music no matter the language, comedy and sci-fi movies and popular web series.
-                Or let's just talk about the weather and see where it goes from there, no pressure.
+                Or let&apos;s just talk about the weather and see where it goes from there, no pressure.
             </p>
         </Section>
     );

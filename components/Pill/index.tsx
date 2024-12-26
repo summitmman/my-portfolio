@@ -16,7 +16,8 @@ interface PillProps extends PropsWithChildren {
     variant?: PillVariant;
     type?: PillType;
     className?: string;
-    onClick?: Function;
+    onClick?: () => void;
+    /* eslint-disable  @typescript-eslint/no-explicit-any */
     icon?: ReactElement<any>;
 }
 

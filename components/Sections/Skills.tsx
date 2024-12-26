@@ -1,18 +1,17 @@
+import { BiLogoTypescript } from 'react-icons/bi';
+import {
+    FaAngular,
+    FaCompassDrafting,
+    FaDatabase,
+    FaHashtag,
+    FaNodeJs,
+    FaReact,
+    FaRocket,
+    FaVuejs
+} from 'react-icons/fa6';
+import { SiAmp, SiGraphql, SiStrapi } from 'react-icons/si';
 import Pill, { PillType, PillVariant } from '../Pill';
 import Section from './Section';
-import {
-    FaReact,
-    FaVuejs,
-    FaAngular,
-    FaT,
-    FaNodeJs,
-    FaDatabase,
-    FaCompassDrafting,
-    FaRocket,
-    FaHashtag
-} from 'react-icons/fa6';
-import { BiLogoTypescript } from 'react-icons/bi';
-import { SiStrapi, SiAmp, SiGraphql } from 'react-icons/si';
 
 const Skills = () => {
     return (

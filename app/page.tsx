@@ -1,6 +1,5 @@
 import Banner from "@/components/Banner";
-import Profile from "@/components/Profile";
-import { Education, Introduction, Language, Skills, WorkExperience, Interests, VolunteerExperience, IceBreaker } from "@/components/Sections";
+import { Introduction, Skills, WorkExperience } from "@/components/Sections";
 
 export default function Home() {
   return (

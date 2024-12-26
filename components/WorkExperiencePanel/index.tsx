@@ -55,7 +55,9 @@ const WorkExperiencePanel = ({ data }: WorkExperiencePanelProps) => {
                     (t, index) => (
                         <Pill
                             key={index}
+                            /* eslint-disable  @typescript-eslint/no-explicit-any */
                             variant={(t as any).variant}
+                            /* eslint-disable  @typescript-eslint/no-explicit-any */
                             className={`${(t as any).variant === PillVariant.Dashed ? 'expand' : ''} ${expanded}`}
                         >
                             {typeof t === 'string' ? t : t.label}
