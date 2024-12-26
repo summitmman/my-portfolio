@@ -9,7 +9,7 @@
     color: var(--sub-header-text-color);
 }
 .social {
-    @apply flex gap-3 list-none text-xl mt-2;
+    @apply flex gap-5 sm:gap-3 list-none text-2xl sm:text-xl mt-2;
 }
 .social > li > a {
     color: var(--primary-color);
