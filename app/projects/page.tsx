@@ -1,5 +1,5 @@
-import Pill, { PillType } from "@/components/Pill";
-import { FaNpm } from 'react-icons/fa6';
+import Pill, { PillType, PillVariant } from "@/components/Pill";
+import { FaNpm, FaTags } from 'react-icons/fa6';
 import { SiStackblitz } from 'react-icons/si';
 import styles from './page.module.css';
 
@@ -51,7 +51,8 @@ const Projects = () => {
                                     {project.description}
                                 </div>
                                 <div className="pill-container text-xs">
-                                    {project.technologies.map(tech => <Pill type={PillType.Default} key={tech}>{tech}</Pill>)}
+                                    <FaTags className="inline-block text-sm" />
+                                    {project.technologies.map(tech => <Pill type={PillType.Primary} variant={PillVariant.Outline} key={tech}>{tech}</Pill>)}
                                 </div>
                                 {project.demoLink && (
                                     <div className="mt-4">
