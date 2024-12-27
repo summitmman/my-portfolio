@@ -93,11 +93,11 @@ const Blog = () => {
                                     {project.tags?.length && <div className="text-xs sm:flex sm:gap-4 mt-1">
                                         <div className="pill-container">
                                             <FaTags className="inline-block text-sm" />
-                                            {project.tags.map(tag => <Pill type={PillType.Primary} key={tag}>{tag}</Pill>)}
+                                            {project.tags.map(tag => <Pill type={PillType.Default} key={tag}>{tag}</Pill>)}
                                         </div>
                                     </div>}
                                 </div>
-                                <div className="text-sm sm:flex sm:gap-4 mt-1 opacity-60">
+                                <div className="text-sm sm:flex sm:gap-4 mt-3 opacity-60">
                                     <div><FaCalendar className="inline-block align-text-top" /> Published on {project.publishDate}</div>
                                     <div><FaBookOpenReader className="inline-block align-text-top" /> {project.readTime} min read</div>
                                 </div>

@@ -51,7 +51,7 @@ const Projects = () => {
                                     {project.description}
                                 </div>
                                 <div className="pill-container text-xs">
-                                    {project.technologies.map(tech => <Pill type={PillType.Primary} key={tech}>{tech}</Pill>)}
+                                    {project.technologies.map(tech => <Pill type={PillType.Default} key={tech}>{tech}</Pill>)}
                                 </div>
                                 {project.demoLink && (
                                     <div className="mt-4">
