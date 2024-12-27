@@ -73,25 +73,31 @@ const Blog = () => {
                 <div>
                     {projects.map(project => (
                         <div className="sm:flex sm:gap-8 mt-14" key={project.title}>
-                            <a href={project.link} target="_blank"><Image src={project.image} width={700} height={451} alt="blog image" className={styles.projectIcon} /></a>
-                            <div className="w-full sm:relative">
-                                <div className="title mt-2">
-                                    <a
-                                        href={project.link}
-                                        target="_blank"
-                                        className="header-font font-bold"
-                                    >{project.title}</a>
-                                </div>
-                                <div className="description">
-                                    {project.description}
-                                </div>
-                                {project.tags?.length && <div className="text-xs sm:flex sm:gap-4 mt-1">
-                                    <div className="pill-container">
-                                        <FaTags className="inline-block text-sm" />
-                                        {project.tags.map(tag => <Pill type={PillType.Primary} key={tag}>{tag}</Pill>)}
+                            <div>
+                                <a href={project.link} target="_blank">
+                                    <Image src={project.image} width={700} height={451} alt="blog image" className={styles.projectIcon} />
+                                </a>
+                            </div>
+                            <div className="w-full sm:relative flex flex-col justify-between">
+                                <div>
+                                    <div className="title mt-2">
+                                        <a
+                                            href={project.link}
+                                            target="_blank"
+                                            className="header-font font-bold"
+                                        >{project.title}</a>
                                     </div>
-                                </div>}
-                                <div className="text-sm sm:flex sm:gap-4 mt-1 sm:absolute sm:bottom-0 opacity-60">
+                                    <div className="description">
+                                        {project.description}
+                                    </div>
+                                    {project.tags?.length && <div className="text-xs sm:flex sm:gap-4 mt-1">
+                                        <div className="pill-container">
+                                            <FaTags className="inline-block text-sm" />
+                                            {project.tags.map(tag => <Pill type={PillType.Primary} key={tag}>{tag}</Pill>)}
+                                        </div>
+                                    </div>}
+                                </div>
+                                <div className="text-sm sm:flex sm:gap-4 mt-1 opacity-60">
                                     <div><FaCalendar className="inline-block align-text-top" /> Published on {project.publishDate}</div>
                                     <div><FaBookOpenReader className="inline-block align-text-top" /> {project.readTime} min read</div>
                                 </div>
