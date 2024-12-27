@@ -1,4 +1,4 @@
-/* .themeList {
+.themeList {
     transform: translate(-3.7rem, 24.6rem) rotate(-90deg);
     position: fixed;
     font-size: 0.8rem;
@@ -9,8 +9,8 @@
     .themeList {
         transform: translate(-1.7rem, 24.6rem) rotate(-90deg);
     }
-} */
-.themeList {
+}
+/* .themeList {
     transform: translateX(-3.7rem) rotate(-90deg);
     position: fixed;
     font-size: 0.8rem;
@@ -26,12 +26,12 @@
 .themeList::after {
     content: '';
     border-top: 1px dashed var(--sub-header-text-color);
-    width: calc(100vh - 37.7rem);
+    width: calc(100vh - 40rem);
     height: 0;
     position: absolute;
     top: 0.6rem;
     left: calc(100% - -0.7rem);
-}
+} */
 .themeList, .themeList > ul {
     display: flex;
 }

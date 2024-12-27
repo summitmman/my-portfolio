@@ -19,7 +19,15 @@ const Projects = () => {
             link: 'https://stackblitz.com/edit/typescript-ifb48m?file=index.ts',
             description: 'A simple Open-Close typescript rule engine with JSON rules. You can add custom conditions and extend the rule engine as needed.',
             technologies: ['Typescript', 'Vite'],
-            demoLink: 'https://stackblitz.com/edit/typescript-ifb48m?embed=1&file=index.ts'
+            demoLink: 'https://stackblitz.com/edit/typescript-ifb48m?embed=1&file=index.ts&view=preview&hideNavigation=1'
+        },
+        {
+            image: <SiStackblitz />,
+            title: 'Custom Frontend framework',
+            link: 'https://stackblitz.com/edit/typescript-yqlgc8?file=index.ts',
+            description: 'Simple recreation of the Vue framework with basic reactivity',
+            technologies: ['Typescript', 'Vite'],
+            demoLink: 'https://stackblitz.com/edit/typescript-yqlgc8?embed=1&file=index.ts&view=preview&hideNavigation=1'
         }
     ];
     return (
@@ -47,8 +55,8 @@ const Projects = () => {
                                 </div>
                                 {project.demoLink && (
                                     <div className="mt-4">
-                                        <iframe className="w-full h-96 grayscale" src={project.demoLink} frameBorder="0"></iframe>
-                                        <a href={project.demoLink} target="_blank" className="arrow-link text-xs mt-4 mb-2">Visit demo site</a>
+                                        <iframe className="w-full h-96 grayscale rounded-md" src={project.demoLink} frameBorder="0"></iframe>
+                                        <a href={project.demoLink} target="_blank" className="arrow-link text-xs !mt-3 mb-2">Visit demo site</a>
                                     </div>
                                 )}
                             </div>
