@@ -74,11 +74,13 @@ const ThemeSelector = () => {
     };
 
     return (
-        <div className={styles.themeList}>
-            <span className={styles.title}>choose mood: </span>
-            <ul>
-                {themeNames.map((name, index) => <li key={index} className={currentTheme === name ? styles.active : ''} onClick={() => applyTheme(name)}>{name}</li>)}
-            </ul>
+        <div className="my-container relative">
+            <div className={styles.themeList}>
+                <span className={styles.title}>change mood: </span>
+                <ul>
+                    {themeNames.map((name, index) => <li key={index} className={currentTheme === name ? styles.active : ''} onClick={() => applyTheme(name)}>{name}</li>)}
+                </ul>
+            </div>
         </div>
     );
 };

@@ -37,13 +37,14 @@
 
 .knowMore {
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .workDetails {
     @apply list-disc ml-4;
 }
 .workDetails > li {
-    @apply mb-6;
+    @apply mb-4;
 }
 .workDetails > li:last-child {
     @apply mb-0;

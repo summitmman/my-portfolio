@@ -6,7 +6,7 @@
 
 .timelineItem {
     position: relative;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 .timelineItem:first-child {
     margin-top: 0;

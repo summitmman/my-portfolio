@@ -24,7 +24,7 @@ const Projects = () => {
     ];
     return (
         <main className="my-container">
-            <section className="mt-8">
+            <section className="mt-6">
                 <h2 className={`header-text-size`}>Projects</h2>
                 <p>Below are some utilities and libraries I have created on my personal time. They are open source, so feel free to contribute if they seem interesting.</p>
                 <div>

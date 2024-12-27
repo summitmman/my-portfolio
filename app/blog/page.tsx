@@ -67,7 +67,7 @@ const Blog = () => {
 
     return (
         <main className="my-container">
-            <section className="mt-8">
+            <section className="mt-6">
                 <h2 className={`header-text-size`}>Blog</h2>
                 <p>I often write technical blogs where I try to explain concepts with a different perspective, share my learnings and help others create utilies on their own. Below are some of my notable blogs. To read all of them follow me on <a className="arrow-link" href="https://medium.com/@summitmman">Medium</a></p>
                 <div>

@@ -176,7 +176,8 @@ li::marker {
 .header-text-size {
   font-size: 3.5rem;
   line-height: 4rem;
-  @apply py-4 font-bold;
+  padding-top: 0.7rem;
+  @apply pb-4 font-bold break-words sm:break-normal hyphens-auto sm:hyphens-none;
 }
 .header-font {
   font-family: var(--font-header), Arial, Helvetica, sans-serif;

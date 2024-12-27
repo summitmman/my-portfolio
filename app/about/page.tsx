@@ -5,7 +5,7 @@ const About = () => {
     return (
         <main className="my-container flex flex-col-reverse sm:grid sm:grid-cols-3 sm:gap-8">
             <div className="col-span-2">
-                <section className="mt-8">
+                <section className="mt-6">
                     <h2 className={`header-text-size`}>I design & develop customizable solutions</h2>
                     <p>
                         I am Sumit Man, a seasoned software developer and a Senior Technical Lead in Paytm (my last organization).
