@@ -16,7 +16,8 @@ const defaultFont = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Sumit Man | Software Developer",
-  description: "I am a software developer passionate about coding and creating experiences",
+  description: "I build experiences for the web and bring customizable solutions to problems",
+  keywords: ['sumit', 'sumit man', 'summitmman', 'frontend', 'developer', 'software developer', 'frontend developer', 'software engineer', 'web developer', 'tech lead', 'lead']
 };
 
 export default function RootLayout({
