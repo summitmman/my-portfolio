@@ -1,5 +1,6 @@
 import Profile from "@/components/Profile";
 import { Education, IceBreaker, Interests, Language, Skills, VolunteerExperience } from "@/components/Sections";
+import styles from './page.module.css';
 
 const About = () => {
     return (
@@ -18,7 +19,7 @@ const About = () => {
                         I believe not all problems have the same solution and hence do not force a solution. Through the years of experience I have understood that maintainability comes first. A great solution might not be maintainable and may harm the project in the future.
                     </p>
                     <p className="mt-4">
-                        In my spare time, I usually go for walks, swim, sketch and hangout with my wife and two cats having deep conversations (yes, the cats listen in).
+                        In my spare time, I usually go for walks, swim, sketch and hangout with my wife and two cats having deep conversations <span className={`sm:shimmer ${styles.cursorCat}`}>(yes, the cats listen in)</span>.
                     </p>
                 </section>
                 <IceBreaker />

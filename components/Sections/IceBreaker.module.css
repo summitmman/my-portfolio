@@ -1,0 +1,15 @@
+.cursorSamurai:hover {
+    cursor: url(/samurai.png), auto;
+}
+.cursorAnime:hover {
+    cursor: url(/anime.jpg), auto;
+}
+.cursorScience:hover {
+    cursor: url(/science.png), auto;
+}
+.cursorMovie:hover {
+    cursor: url(/movie.png), auto;
+}
+.cursorGame:hover {
+    cursor: url(/game.png), auto;
+}
