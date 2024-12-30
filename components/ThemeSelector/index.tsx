@@ -12,7 +12,7 @@ enum Theme {
 const ThemeSelector = () => {
     const themes: Record<Theme, Record<string, string>> = {
         [Theme.Vintage]: {
-            ['--border-color']: 'rgba(0,0,0,0.6)',
+            ['--border-color']: 'rgba(0,0,0,0.3)',
             ['--background-color']: '#F5F5DC',
             ['--foreground-color']: '#171717',
             ['--header-text-color']: '#3C3D37',
@@ -24,7 +24,7 @@ const ThemeSelector = () => {
             ['--selection-color']: '#171717',
         },
         [Theme.Neon]: {
-            ['--border-color']: 'rgba(0,0,0,0.6)',
+            ['--border-color']: 'rgba(255,255,255,0.3)',
             ['--background-color']: '#140D0D',
             ['--foreground-color']: '#D6D6D6',
             ['--header-text-color']: '#31E1F7',
@@ -36,7 +36,7 @@ const ThemeSelector = () => {
             ['--selection-color']: '#D6D6D6',
         },
         [Theme.Retro]: {
-            ['--border-color']: 'rgba(0,0,0,0.6)',
+            ['--border-color']: 'rgba(0,0,0,0.3)',
             ['--background-color']: '#FFF6E9',
             ['--foreground-color']: '#171717',
             ['--header-text-color']: '#4335A7',
@@ -48,7 +48,7 @@ const ThemeSelector = () => {
             ['--selection-color']: '#171717',
         },
         [Theme.Contrast]: {
-            ['--border-color']: 'rgba(0,0,0,0.6)',
+            ['--border-color']: 'rgba(0,0,0,0.3)',
             ['--background-color']: '#FFF',
             ['--foreground-color']: '#171717',
             ['--header-text-color']: '#171717',
