@@ -25,7 +25,7 @@ const Projects = () => {
             image: <SiStackblitz />,
             title: 'Custom Frontend framework',
             link: 'https://stackblitz.com/edit/typescript-yqlgc8?file=index.ts',
-            description: 'Simple recreation of the Vue framework with basic reactivity',
+            description: 'I tried creating my own frontend framework borrowing the vue syntax and simple reactivity. In the "index.ts" file you will notice that the familiar ref, computed and mount are being imported from "framework" which is my frontend library code.',
             technologies: ['Typescript', 'Vite'],
             demoLink: 'https://stackblitz.com/edit/typescript-yqlgc8?embed=1&file=index.ts&view=preview&hideNavigation=1'
         }
