@@ -7,7 +7,7 @@ interface SectionProps extends PropsWithChildren {
 
 const Section = ({ title, children }: SectionProps) => {
     return (
-        <section className="mt-8">
+        <section className="mt-8 page-appear">
             <h2 className={`${styles.stickyHeader} font-bold text-xl py-4`}>{title}</h2>
             {children}
         </section>
