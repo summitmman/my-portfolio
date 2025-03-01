@@ -72,7 +72,7 @@ const Blog = () => {
                 <p>I often write technical blogs where I try to explain concepts with a different perspective, share my learnings and help others create utilies on their own. Below are some of my notable blogs. To read all of them follow me on <a className="arrow-link" href="https://medium.com/@summitmman">Medium</a></p>
                 <div>
                     {projects.map(project => (
-                        <div className="sm:flex sm:gap-8 mt-14" key={project.title}>
+                        <div className={`sm:flex sm:gap-8 mt-14 ${styles.post}`} key={project.title}>
                             <div>
                                 <a href={project.link} target="_blank">
                                     <Image src={project.image} width={700} height={451} alt="blog image" className={styles.projectIcon} />

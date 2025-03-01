@@ -5,6 +5,6 @@
     object-fit: cover;
     filter: grayscale(1);
 }
-.projectIcon:hover {
+.post:hover .projectIcon {
     filter: grayscale(0);
 }
